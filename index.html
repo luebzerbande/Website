@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SudioStil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="language-switcher" role="group" aria-label="Sprache wechseln">
+          <button id="btn-de" aria-pressed="true">DE</button>
+          <button id="btn-en" aria-pressed="false">EN</button>
+        </div>
+        <button id="darkModeToggle" aria-label="Dark Mode umschalten" title="Dark Mode umschalten">🌙</button>
+      </div>
+
+      <h1 class="animated-title" data-i18n="title">Deine personalisierte Website</h1>
+      <p data-i18n="subtitle">Professionelle Webentwicklung genau für dich zugeschnitten!</p>
+    </header>
+
+    <section class="offers">
+      <h2 data-i18n="offersTitle">Unsere Angebote</h2>
+      <div class="offer">
+        <h3>Basic Website</h3>
+        <p>Bis zu 3 Seiten, modernes Design, mobil-optimiert.</p>
+        <div class="price">Ab 300€</div>
+      </div>
+      <div class="offer">
+        <h3>Business Website</h3>
+        <p>Bis zu 7 Seiten, Kontaktformular, SEO-Grundlagen.</p>
+        <div class="price">Ab 700€</div>
+      </div>
+      <div class="offer">
+        <h3>Premium Website</h3>
+        <p>Bis zu 15 Seiten, Blog, individuelle Funktionen, SEO-Optimierung.</p>
+        <div class="price">Ab 1500€</div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 data-i18n="portfolioTitle">Portfolio</h2>
+      <div class="portfolio-item">
+        <h4>Projekt 1</h4>
+        <p>Moderne Firmenwebsite mit responsivem Design.</p>
+      </div>
+      <div class="portfolio-item">
+        <h4>Projekt 2</h4>
+        <p>Online-Shop mit einfachem Checkout-System.</p>
+      </div>
+      <div class="portfolio-item">
+        <h4>Projekt 3</h4>
+        <p>Blog mit CMS-Anbindung und individuellem Design.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 data-i18n="testimonialsTitle">Kundenstimmen</h2>
+      <div class="testimonial-list">
+        <blockquote>
+          <p>“Super Service und tolle Umsetzung! Meine Website sieht fantastisch aus.”</p>
+          <footer>– Maria S.</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Schnelle Kommunikation und professionelle Arbeit, sehr zu empfehlen.”</p>
+          <footer>– Jens K.</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Top individuelle Beratung und Umsetzung. Bin sehr zufrieden!”</p>
+          <footer>– Lena M.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2 data-i18n="socialTitle">Folge uns auf Social Media</h2>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook" title="Facebook"><svg fill="#4267B2" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .73.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.466.099 2.797.142v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12v9.294h6.116c.73 0 1.324-.594 1.324-1.324v-21.35c0-.732-.594-1.325-1.324-1.325z"/></svg></a>
+        <a href="#" aria-label="Twitter" title="Twitter"><svg fill="#1DA1F2" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.563-2.005.974-3.127 1.195-.896-.952-2.173-1.55-3.594-1.55-2.722 0-4.932 2.21-4.932 4.932 0 .39.045.765.127 1.124-4.094-.205-7.725-2.167-10.157-5.144-.424.722-.666 1.561-.666 2.457 0 1.697.863 3.194 2.174 4.074-.803-.026-1.56-.246-2.228-.616v.061c0 2.37 1.686 4.346 3.923 4.79-.41.111-.84.171-1.287.171-.315 0-.624-.03-.927-.086.626 1.953 2.444 3.377 4.6 3.417-1.685 1.32-3.808 2.104-6.115 2.104-.398 0-.79-.023-1.175-.068 2.179 1.398 4.768 2.213 7.557 2.213 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.634.962-.695 1.8-1.562 2.46-2.549z"/></svg></a>
+        <a href="#" aria-label="Instagram" title="Instagram"><svg fill="#E1306C" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5a5.75 5.75 0 0 1 5.75 5.75v8.5a5.75 5.75 0 0 1-5.75 5.75h-8.5a5.75 5.75 0 0 1-5.75-5.75v-8.5A5.75 5.75 0 0 1 7.75 2zm4.25 3a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm6.5-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Deine Website Agentur. <a href="#">Impressum</a></p>
+    </footer>
+  </div>
+
+  <!-- Kontaktformular Modal -->
+  <div id="contactModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="contactTitle" aria-modal="true">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Schließen" title="Schließen" onclick="closeContact()">&times;</button>
+      <h2 id="contactTitle" data-i18n="contactTitle">Kontakt aufnehmen</h2>
+      <form id="contactForm">
+        <label for="name" data-i18n="contactName">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email" data-i18n="contactEmail">E-Mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message" data-i18n="contactMessage">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" data-i18n="contactSubmit">Absenden</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="contact-button" aria-haspopup="dialog" aria-controls="contactModal" onclick="openContact()">Kontakt</button>
+</body>
+</html>
